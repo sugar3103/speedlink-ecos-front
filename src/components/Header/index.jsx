@@ -35,7 +35,7 @@ function Header(props) {
     fontSize: "10px",
     verticalAlign: "middle"
   };
-  
+
   return (
     <>
       {/* <p>This is Header</p> */}
@@ -59,6 +59,7 @@ function Header(props) {
           <ul className="nav navbar-nav">
             <li className="page-title">
               <a href="_#">{}</a>
+              <span style={{color: "white"}}>Made by Đường Phan | Author Đường Phan</span>
             </li>
           </ul>
           <ul className="nav navbar-nav navbar-right">
