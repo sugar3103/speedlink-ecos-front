@@ -31,3 +31,16 @@
     transform: rotate(360deg);
   }
 }
+
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+body {
+  background: #232329;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 13px !important;
+  line-height: 1.6;
+}
