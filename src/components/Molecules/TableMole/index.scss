@@ -1,0 +1,68 @@
+button:disabled,
+button[disabled] {
+  background-color: #232329 !important;
+  color: #666666 !important;
+}
+
+select option {
+  color: black;
+}
+
+.table-thead-underline {
+  border-collapse: collapse;
+
+  & th,
+  & td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 3px;
+  }
+
+  & th {
+    border-bottom: 2px solid white;
+  }
+
+  & tr:hover {
+    background: #2a2a31;
+  }
+
+  & td {
+    cursor: pointer;
+    color: #999;
+    text-align: left;
+  }
+}
+
+.clear::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.table-select_box {
+  float: right;
+  margin: 20px 20px 10px 0;
+}
+
+// .tableMole-btn-filter {
+//   background: none;
+//   color: white;
+//   border: none;
+//   cursor: pointer;
+//   font-size: 20px;
+//   vertical-align: middle;
+
+//   &:hover {
+//     color: red;
+//   }
+// }
+
+.tableMole-deletebtn-left {
+  float: left;
+  margin: -50px 0 0 220px;
+}
+
+.tableMole-option-right {
+  float: right;
+  margin: -40px 20px 0 0;
+}

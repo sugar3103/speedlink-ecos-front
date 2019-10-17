@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  outline: none;
+}
+
+body {
+  background: #232329;
+  font-size: 15px !important;
+  font-family: "Noto Sans", sans-serif;
+}
+
+// set hover change button color
+button {
+  --width: 100%;
+  --time: 0.3s;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  span {
+    border-radius: 100%;
+    position: absolute;
+    display: block;
+    content: "";
+    z-index: 0;
+    width: 0;
+    height: 0;
+
+    transform: translate(-50%, -50%);
+    transition: width var(--time), padding-top var(--time);
+  }
+
+  p {
+    position: relative;
+    z-index: 1;
+    transition: color var(--time);
+  }
+
+  &:hover {
+    span {
+      width: calc(var(--width) * 2.25);
+      padding-top: calc(var(--width) * 2.25);
+    }
+
+    p {
+      color: white;
+    }
+  }
+}
+
+.navbar-fixed-left {
+  width: 15%;
+  position: fixed;
+  height: 100%;
+  padding-top: 20px;
+
+  ul {
+    list-style-type: none;
+    margin-left: -40px;
+  }
+
+  li {
+    padding: 10px 0 10px 20px;
+    cursor: pointer;
+
+    &:hover {
+      background: #232329;
+    }
+  }
+
+  .navbar-nav li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  + .container {
+    text-align: center;
+  }
+
+  .sub-pricingSpecial {
+    display: none;
+  }
+
+  .sub-pricingDomestic {
+    display: none;
+  }
+}
+
+.container {
+  width: 85%;
+  margin-left: 15%;
+  height: calc(100vh - 54px);
+  color: white;
+  display: inline-block;
+  color: #dddddd;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.marginLeft-0 {
+  margin-left: 0 !important;
+  width: 100% !important;
+}
+
+thead {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.subMenu li {
+  width: 100%;
+  margin: 0 0 0 0 !important;
+  padding-left: 35px !important;
+}

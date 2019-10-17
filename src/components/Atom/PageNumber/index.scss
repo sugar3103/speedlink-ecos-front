@@ -1,0 +1,22 @@
+.select {
+  background: inherit !important;
+  color: white !important;
+  margin-top: 2px !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.pageNumber-prevNext_btn {
+  float: left;
+  background: #2a2a31;
+  border: none;
+  color: #dddddd;
+  cursor: pointer;
+  padding: 10px 15px 10px 15px;
+  margin: 5px 0 0 2px;
+  border-radius: 40px;
+}
+
+.pageNumber-prevNext_btn:hover {
+  background: green;
+}
